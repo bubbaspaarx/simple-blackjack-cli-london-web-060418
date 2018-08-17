@@ -20,7 +20,8 @@ end
 
 def get_user_input
   # code #get_user_input here
-  return gets.chomp
+  input = gets.chomp
+  return input
 end
 
 def end_game(card_total)
@@ -35,10 +36,18 @@ def initial_round
   total
 end
 
+  it "calls on #prompt_user then #get_user_input" do
+    expect($stdout).to receive(:puts).with("Type 'h' to hit or 's' to stay")
+    expect(self).to receive(:get_user_input).and_return("s")
+    hit?(7)
+  end
+
+
+
 def hit?(current_total)
   # code hit? here
   prompt_user
-  input = get_user_input
+  get_user_input
   if input  == "s"
     display_card_total(current_total)
     current_total
