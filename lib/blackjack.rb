@@ -74,3 +74,5 @@ def runner
     hit?(total)
   end
 end
+
+runner
