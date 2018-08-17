@@ -73,5 +73,4 @@ def runner
   else
     hit?(total)
   end
-  display_card_total(total)
 end
