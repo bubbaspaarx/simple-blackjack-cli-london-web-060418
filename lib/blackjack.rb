@@ -44,7 +44,6 @@ end
 def hit?(current_total)
    prompt_user
    input = get_user_input
-   p input
   if input == "s"
     current_total
   elsif input == "h"
