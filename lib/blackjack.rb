@@ -64,3 +64,4 @@ end
     
 welcome
 initial_round
+hit?
