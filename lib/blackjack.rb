@@ -20,7 +20,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  return gets.chomp
+  gets.chomp
 end
 
 def end_game(card_total)
@@ -32,6 +32,7 @@ def initial_round
   # code #initial_round here
   total = deal_card + deal_card
   display_card_total(total)
+  total
 end
 
   # it "calls on #prompt_user then #get_user_input" do
