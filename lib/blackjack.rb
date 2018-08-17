@@ -32,7 +32,6 @@ def initial_round
   # code #initial_round here
   total = deal_card + deal_card
   display_card_total(total)
-  hit?(total)
 end
 
   # it "calls on #prompt_user then #get_user_input" do
@@ -69,6 +68,3 @@ end
 def runner
   # code runner here
 end
-
-welcome
-initial_round
